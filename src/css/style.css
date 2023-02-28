@@ -7,65 +7,103 @@
 
 /* Global styles */
 body {
-  font-family: 'Source Code Pro', monospace;
+font-family: 'Source Code Pro', monospace;
   font-size: 16px;
   line-height: 1.5;
-  color: #333;
-  background-color: #fff;
+  color: #f3efe0;
+  background-color: #222222;
 }
 
 /* Header styles */
 header {
-  background-color: #f2f2f2;
+  background-color: #434242;
   padding: 20px;
 }
 
 /* Navigation styles */
-nav {
+.navbar {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f3efe0;
 }
 
-nav ul {
+.nav-tabs {
   list-style: none;
   display: flex;
 }
 
-nav li {
+.nav-item {
   margin: 0 10px;
 }
 
-nav a {
+.nav-link {
   text-decoration: none;
-  color: #333;
+  color: #222222;
   padding: 5px 10px;
 }
 
-nav a:hover {
-  background-color: #333;
-  color: #fff;
+.nav-link.active,
+.nav-link:hover {
+  background-color: #22a39f;
+  color: #f3efe0;
+}
+
+.dropdown-menu {
+  background-color: #434242;
+}
+
+.dropdown-item {
+  color: #f3efe0;
+}
+
+.dropdown-item:hover {
+  background-color: #22a39f;
+}
+
+.dropdown-divider {
+  border-top: 1px solid #f3efe0;
 }
 
 /* Main content styles */
-main {
+.container {
+  color: #f3efe0;
+  background-color: #434242;
   padding: 20px;
+}
+
+.col {
+  border: 1px solid #f3efe0;
+  margin: 10px;
+  padding: 20px;
+}
+
+.order-first {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-last {
+  order: 3;
 }
 
 /* Footer styles */
 footer {
-  background-color: #f2f2f2;
+  background-color: #f3efe0;
   padding: 20px;
   text-align: center;
 }
 
 /* Responsive styles */
-/* @media (max-width: 768px) {
-  nav {
+@media (max-width: 768px) {
+  .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
-  nav li {
+  .nav-item {
     margin: 10px 0;
   }
-} */
+}
