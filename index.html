@@ -47,11 +47,17 @@
     </ul>
 </header>
 <body>
-<div class="container">
-    <div class="grid text-center">
-        <div class="g-col-3 g-col-md-4">.g-col-6 .g-col-md-4</div>
-        <div class="g-col-3 g-col-md-4">.g-col-6 .g-col-md-4</div>
-        <div class="g-col-3 g-col-md-4">.g-col-6 .g-col-md-4</div>
+<div class="container text-center">
+    <div class="row">
+        <div class="col order-first">
+            First in DOM, ordered first
+        </div>
+        <div class="col order-2">
+            Second in DOM, order Second
+        </div>
+        <div class="col order-last">
+            Third in DOM, ordered last of 3
+        </div>
     </div>
 </div>
 
